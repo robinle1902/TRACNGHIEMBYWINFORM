@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="quizDataSet1" targetNamespace="http://tempuri.org/quizDataSet1.xsd" xmlns:mstns="http://tempuri.org/quizDataSet1.xsd" xmlns="http://tempuri.org/quizDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="quizConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="quizConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TRACNGHIEMBYWINFORM.Properties.Settings.GlobalReference.Default.quizConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="table_cauhoi2TableAdapter" GeneratorDataComponentClassName="table_cauhoi2TableAdapter" Name="table_cauhoi2" UserDataComponentName="table_cauhoi2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="quizConnectionString (Settings)" DbObjectName="quiz.dbo.table_cauhoi2" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT chude FROM dbo.table_cauhoi2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="chude" DataSetColumn="chude" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="quizDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="quizDataSet1" msprop:Generator_UserDSName="quizDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="table_cauhoi2" msprop:Generator_TableClassName="table_cauhoi2DataTable" msprop:Generator_TableVarName="tabletable_cauhoi2" msprop:Generator_TablePropName="table_cauhoi2" msprop:Generator_RowDeletingName="table_cauhoi2RowDeleting" msprop:Generator_RowChangingName="table_cauhoi2RowChanging" msprop:Generator_RowEvHandlerName="table_cauhoi2RowChangeEventHandler" msprop:Generator_RowDeletedName="table_cauhoi2RowDeleted" msprop:Generator_UserTableName="table_cauhoi2" msprop:Generator_RowChangedName="table_cauhoi2RowChanged" msprop:Generator_RowEvArgName="table_cauhoi2RowChangeEvent" msprop:Generator_RowClassName="table_cauhoi2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="chude" msprop:Generator_ColumnVarNameInTable="columnchude" msprop:Generator_ColumnPropNameInRow="chude" msprop:Generator_ColumnPropNameInTable="chudeColumn" msprop:Generator_UserColumnName="chude">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
